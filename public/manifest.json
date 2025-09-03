@@ -1,0 +1,22 @@
+{
+  "short_name": "André Reis GBP",
+  "name": "André Reis - Especialista em Google Business Profile",
+  "description": "Especialista em Google Business Profile em Curitiba/PR. Criação, otimização e gestão de GBP para empresas dominarem as buscas locais.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#3982F6",
+  "background_color": "#1F2937",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "andre-reis-gbp"
+}
