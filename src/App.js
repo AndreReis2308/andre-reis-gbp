@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FaUserTie, FaMapMarkerAlt, FaBolt, FaCheckCircle } from "react-icons/fa";
 import "./App.css";
 
 // Hero Section Component
@@ -215,12 +216,12 @@ const SuccessCasesSection = () => {
     {
       title: "Caso #1",
       description: "Estudo de caso em desenvolvimento...",
-      category: "Restaurante Local"
+      category: "Clínica Odontológica"
     },
     {
       title: "Caso #2", 
       description: "Estudo de caso em desenvolvimento...",
-      category: "Clínica Médica"
+      category: "Clínica de Fisioterapia"
     },
     {
       title: "Caso #3",
@@ -291,37 +292,28 @@ const AboutSection = () => {
             </div>
           </div>
           
-          <div className="lg:text-center">
-            <div className="bg-gray-800 p-10 rounded-2xl border border-gray-700 inline-block w-full max-w-md mx-auto">
-              <h3 className="text-3xl font-bold mb-8 text-center">André Reis</h3>
-              <div className="space-y-6">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <svg className="w-6 h-6 text-blue-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
-                  </svg>
-                  <span className="text-lg">Especialista em Google Business Profile</span>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <svg className="w-6 h-6 text-blue-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  </svg>
-                  <span className="text-lg">Curitiba/PR</span>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <svg className="w-6 h-6 text-blue-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                  </svg>
-                  <span className="text-lg">SEO Local & GBP</span>
-                </div>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <svg className="w-6 h-6 text-blue-400 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                  </svg>
-                  <span className="text-lg">Resultados Comprovados</span>
-                </div>
+          <div className="rounded-3xl bg-slate-800/60 p-6 sm:p-8">
+              <h2 className="text-xl font-bold mb-4">André Reis</h2>
+              
+              <div className="flex items-center gap-2">
+                <FaUserTie className="text-blue-400" />
+                <span>Especialista em Google Business Profile</span>
               </div>
-            </div>
+
+              <div className="flex items-center gap-2">
+                <FaMapMarkerAlt className="text-blue-400" />
+                <span>Curitiba/PR</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <FaBolt className="text-blue-400" />
+                <span>SEO Local & GBP</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <FaCheckCircle className="text-blue-400" />
+                <span>Resultados Comprovados</span>
+              </div>            
           </div>
         </div>
       </div>
@@ -494,10 +486,10 @@ const Footer = () => {
                 Pronto para dominar as buscas locais na sua cidade?
               </p>
               <a 
-                href="tel:+5541995173145" 
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 inline-block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                role="button"
-                aria-label="Entrar em contato via telefone"
+                href="https://wa.me/5541995173145?text=Ol%C3%A1%20Andr%C3%A9!%20Vim%20do%20site%20oandrereis.com.br&utm_source=site&utm_medium=cta&utm_campaign=landing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-xl min-h-[44px] px-6 py-3 font-medium bg-blue-600 hover:bg-blue-500 transition"
               >
                 Falar com André
               </a>
